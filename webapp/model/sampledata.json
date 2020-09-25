@@ -1,0 +1,30 @@
+{
+	"data" : [
+		{
+			"state":"West Bengal" ,
+			"city" : "Kolkata",
+			"population" : "1000000"
+		},
+		{
+			"state":"Uttar Pardesh" ,
+			"city" : "Lucknow",
+			"population" : "2000000"
+		},
+		{
+			"state":"Uttar Pardesh" ,
+			"city" : "Varansi",
+			"population" : "3000000"
+		},
+		{
+			"state":"West Bengal" ,
+			"city" : "Asansol",
+			"population" : "15000000"
+		},
+		{
+			"state":"Bihar" ,
+			"city" : "Patna",
+			"population" : "500000"
+		}
+
+		]
+}

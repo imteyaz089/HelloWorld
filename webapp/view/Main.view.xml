@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" controllerName="imt.demo.MyDemo1.controller.Main">
+			<Page title="Main Page">
+				<content>
+					<Input placeholder="State" value="{input>/state}" id="state" width="50%" valueLiveUpdate="true" liveChange=".onSearchState" description="The state is :{input>/state}"/>
+					<List id="list" headerText="General Data" items="{       path:'sample>/data',       sorter:{       path:'state',       group:false       }       }" selectionChange=".onSelectItem">
+						<items>
+							<ObjectListItem type="Navigation" press=".onSelectItem" title="{sample>state}" intro="{sample>city}" number="{sample>population}"/>
+						</items>
+					</List>
+					<Panel id="panel" headerText="Item Details" visible="false">
+						<l:Grid>
+							<Text text="State : {sample>state}"/>
+							<Text text="City : {sample>city}"/>
+							<Text text="Population :{sample>population}"/>
+						</l:Grid>
+					</Panel>
+				</content>
+			</Page>
+	
+</mvc:View>
